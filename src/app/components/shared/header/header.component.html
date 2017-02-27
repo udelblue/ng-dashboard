@@ -1,0 +1,162 @@
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Dashboard</a>
+               <form class="navbar-form navbar-right">
+             <input type="text" class="form-control" placeholder="Search...">  
+             </form>
+ <!--
+        <ul class="nav navbar-nav navbar-right">
+            <li><a (click)="helpModal.show()" >Help</a></li>
+          </ul>-->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+
+
+ <!-- right menu -->
+<ul class="nav navbar-nav top-nav navbar-right pull-xs-right top-right-nav">
+         <li class="dropdown nav-item" dropdown>
+                <!-- <div class="dropdown"> -->
+                    <a class="nav-link dropdown-toggle"  id="dropdownMenu4" dropdownToggle>
+                      <i class="fa fa-envelope"></i> <b class="caret"></b><span class="sr-only">(current)</span></a>
+                    <ul class="dropdown-menu message-dropdown" aria-labelledby="dropdownMenu4">
+                        <li class="message-preview">
+                            <a  class="dropdown-item">
+                                <div class="media">
+                                    <span class="media-left">
+                                        <img class="media-object" src="http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p class="last"> Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="message-preview">
+                            <a  class="dropdown-item">
+                                <div class="media">
+                                    <span class="media-left">
+                                        <img class="media-object" src="http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p class="last"> Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="message-preview">
+                            <a  class="dropdown-item">
+                                <div class="media">
+                                    <span class="media-left">
+                                        <img class="media-object" src="http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p class="last"> Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="dropdown-item message-footer">
+                            <a  class="dropdown-item text-center">Read All New Messages</a>
+                        </li>
+                    </ul>
+                <!-- </div> -->
+            </li>
+
+
+
+
+
+        <li class="dropdown nav-item" dropdown>
+                <!-- <div class="dropdown"> -->
+                    <a  id="name2" class="nav-link dropdown-toggle" dropdownToggle>
+                        <i class="fa fa-bell"></i> <b class="caret"></b><span class="sr-only">(current)</span>
+                    </a>
+                    <ul class="dropdown-menu alert-dropdown" aria-labelledby="name2">
+                        <li >
+                            <a  class="dropdown-item">Alert Name <span class="label label-default"> Alert Badge</span></a>
+                        </li>
+                        <li >
+                            <a  class="dropdown-item">Alert Name <span class="label label-default"> Alert Badge</span></a>
+                        </li>
+                        <li >
+                            <a  class="dropdown-item">Alert Name <span class="label label-default"> Alert Badge</span></a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <a  class="dropdown-item">View All</a>
+                        </li>
+                    </ul>
+                <!-- </div> -->
+            </li>
+
+
+           <li class="dropdown nav-item"  dropdown>
+                <a  id="single-button" class="nav-link dropdown-toggle" dropdownToggle>
+                    <i class="fa fa-user"></i> John Smith <b class="caret"></b>
+                </a>
+                <ul  dropdownMenu class="dropdown-menu" aria-labelledby="single-button">
+                    <li>
+                        <a class="dropdown-item" ><i class="fa fa-fw fa-user"></i> Profile</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" ><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" ><i class="fa fa-fw fa-gear"></i> Settings</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a class="dropdown-item"  [routerLink]="['/']">
+                            <i class="fa fa-fw fa-power-off"></i> Log Out
+                        </a>
+                    </li>
+                </ul>
+            </li>
+ </ul>
+  <!-- end right menu -->
+
+
+
+
+          </div>
+      
+      </div>
+    </nav>
+
+
+<div bsModal #helpModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Help</h4>
+        <button type="button" class="close pull-right" (click)="helpModal.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+              ..............
+      </div>
+    </div>
+  </div>
+</div>
+ 

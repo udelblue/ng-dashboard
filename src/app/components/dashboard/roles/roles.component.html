@@ -1,0 +1,20 @@
+
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Active</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let role of Roles">
+                 
+                  <td>{{role.role}}</td>
+                  <td>{{role.active}}</td>
+                </tr>
+              
+              </tbody>
+            </table>
+          </div>
+      

@@ -1,0 +1,26 @@
+[ERR!] cwd  : C:\Users\csommers\Desktop\angular 2\ng-dashboard
+[ERR!] os   : Windows_NT 6.1.7601
+[ERR!] argv : "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\tsd\\build\\cli.js" "update" "angular2"
+[ERR!] node : v7.2.1
+[ERR!] tsd  : 0.6.5
+[ERR!] Error: unable to get local issuer certificate
+[ERR!] CODE : UNABLE_TO_GET_ISSUER_CERT_LOCALLY
+[ERR!] unable to get local issuer certificate
+[ERR!] If you need help, you may report this error at:
+    https://github.com/DefinitelyTyped/tsd/issues
+
+[ERR!] 
+Error: unable to get local issuer certificate
+    at TLSSocket.<anonymous> (_tls_wrap.js:1079:38)
+    at emitNone (events.js:86:13)
+    at TLSSocket.emit (events.js:185:7)
+    at TLSSocket._finishInit (_tls_wrap.js:603:8)
+    at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:433:38)
+
+[ERR!] tsd.json could not be retrieved
+
+[ERR!] .tsdrc could not be retrieved
+
+[ERR!] Please include the following file with any support request:
+    C:\Users\csommers\Desktop\angular 2\ng-dashboard\tsd-debug.log
+
